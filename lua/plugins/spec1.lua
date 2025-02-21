@@ -7,4 +7,7 @@ return {
 			vim.cmd([[colorscheme tokyonight-moon]])
 		end,
 	},
+	{
+    		"williamboman/mason.nvim",
+	},
 }
