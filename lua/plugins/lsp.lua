@@ -7,6 +7,7 @@ return {
 	config = function()
 	    local capabilities = require("blink.cmp").get_lsp_capabilities()
 	    require("lspconfig").csharp_ls.setup { capabilities = capabilities }
+	    require("lspconfig").emmet_ls.setup{}
 	end,
     },
 }
