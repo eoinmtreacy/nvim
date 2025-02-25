@@ -24,20 +24,9 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-	  { 
-		  "folke/tokyonight.nvim", 
-		  config = function()
-			  vim.cmd.colorscheme "tokyonight-moon" 
-		  end 
-	  },
-	  { 
-		  "echasnovski/mini.nvim", 
-		  version = false, 
-		  config = function()
-			  local statusline = require 'mini.statusline'
-			  statusline.setup { use_icons = true }
-		  end
-	  }
-
+    -- import your plugins
+    { import = "plugins" },
   },
+  -- automatically check for plugin updates
+  checker = { enabled = true },
 })
